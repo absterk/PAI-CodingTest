@@ -1,0 +1,249 @@
+nohup: ignoring input
+2026-04-26 19:51:32,832 [INFO] Run: resnet18_l1_noaug_20260426_195132
+2026-04-26 19:51:32,833 [INFO] Device: cuda
+2026-04-26 19:51:32,833 [INFO] Config: {'data_root': './data', 'splits_path': './data/splits.json', 'a_max': 0.02, 'img_size': 128, 'input_standardize': False, 'augment': False, 'arch': 'resnet_unet', 'backbone': 'resnet18', 'n_class': 2, 'loss_type': 'l1', 'ssim_weight': 0.5, 'vgg_weight': 0.1, 'roi_weight': 5.0, 'amp_weight_alpha': 3.0, 'batch_size': 64, 'lr': 0.0001, 'weight_decay': 0.01, 'epochs': 100, 'early_stop_patience': 50, 'grad_clip_norm': 1.0, 'num_workers': 0, 'seed': 42, 'device': 'auto', 'save_root': './checkpoints', 'run_name': '', 'wandb_project': 'PAI-CodingTest', 'wandb_mode': 'online'}
+2026-04-26 19:51:32,843 [INFO] Data: train=800  val=200  (batch_size=64)
+2026-04-26 19:51:33,092 [INFO] Model: resnet_unet | trainable params: 14383746
+wandb: [wandb.login()] Loaded credentials for https://api.wandb.ai from /home/sumin2/.netrc.
+wandb: Currently logged in as: kmin940 to https://api.wandb.ai. Use `wandb login --relogin` to force relogin
+wandb: Tracking run with wandb version 0.26.1
+wandb: Run data is saved locally in /home/sumin2/Documents/Somang/code/wandb/run-20260426_195133-pd6p96b5
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run resnet18_l1_noaug_20260426_195132
+wandb: ⭐️ View project at https://wandb.ai/kmin940/PAI-CodingTest
+wandb: 🚀 View run at https://wandb.ai/kmin940/PAI-CodingTest/runs/pd6p96b5
+wandb: WARNING Data passed to `wandb.Image` should consist of values in the range [0, 255], image data will be normalized to this range, but behavior will be removed in a future version of wandb.
+2026-04-26 19:51:37,176 [INFO] Epoch 1/100 | train=0.12214  val_mae=0.16723  psnr=15.10  ssim=0.3494  (2.9s)
+2026-04-26 19:51:37,433 [INFO]   New best MAE: 0.167234
+2026-04-26 19:51:37,557 [INFO]   New best PSNR: 15.10
+2026-04-26 19:51:37,681 [INFO]   New best SSIM: 0.349410
+2026-04-26 19:51:40,143 [INFO] Epoch 2/100 | train=0.03989  val_mae=0.09053  psnr=20.13  ssim=0.6028  (2.5s)
+2026-04-26 19:51:40,499 [INFO]   New best MAE: 0.090527
+2026-04-26 19:51:40,664 [INFO]   New best PSNR: 20.13
+2026-04-26 19:51:40,813 [INFO]   New best SSIM: 0.602782
+2026-04-26 19:51:43,253 [INFO] Epoch 3/100 | train=0.02570  val_mae=0.07839  psnr=20.81  ssim=0.6078  (2.4s)
+2026-04-26 19:51:43,550 [INFO]   New best MAE: 0.078391
+2026-04-26 19:51:43,699 [INFO]   New best PSNR: 20.81
+2026-04-26 19:51:43,845 [INFO]   New best SSIM: 0.607751
+2026-04-26 19:51:46,294 [INFO] Epoch 4/100 | train=0.01933  val_mae=0.05783  psnr=22.82  ssim=0.6968  (2.4s)
+2026-04-26 19:51:46,595 [INFO]   New best MAE: 0.057834
+2026-04-26 19:51:46,748 [INFO]   New best PSNR: 22.82
+2026-04-26 19:51:46,904 [INFO]   New best SSIM: 0.696806
+2026-04-26 19:51:49,346 [INFO] Epoch 5/100 | train=0.01714  val_mae=0.07181  psnr=21.83  ssim=0.6884  (2.4s)
+2026-04-26 19:51:51,969 [INFO] Epoch 6/100 | train=0.01609  val_mae=0.04960  psnr=23.92  ssim=0.7427  (2.4s)
+2026-04-26 19:51:52,297 [INFO]   New best MAE: 0.049601
+2026-04-26 19:51:52,445 [INFO]   New best PSNR: 23.92
+2026-04-26 19:51:52,599 [INFO]   New best SSIM: 0.742726
+2026-04-26 19:51:55,039 [INFO] Epoch 7/100 | train=0.01535  val_mae=0.04361  psnr=24.54  ssim=0.7655  (2.4s)
+2026-04-26 19:51:55,359 [INFO]   New best MAE: 0.043605
+2026-04-26 19:51:55,514 [INFO]   New best PSNR: 24.54
+2026-04-26 19:51:55,666 [INFO]   New best SSIM: 0.765540
+2026-04-26 19:51:58,109 [INFO] Epoch 8/100 | train=0.01435  val_mae=0.04612  psnr=24.73  ssim=0.7833  (2.4s)
+2026-04-26 19:51:58,437 [INFO]   New best PSNR: 24.73
+2026-04-26 19:51:58,587 [INFO]   New best SSIM: 0.783322
+2026-04-26 19:52:01,037 [INFO] Epoch 9/100 | train=0.01276  val_mae=0.04097  psnr=25.40  ssim=0.7871  (2.4s)
+2026-04-26 19:52:01,339 [INFO]   New best MAE: 0.040965
+2026-04-26 19:52:01,497 [INFO]   New best PSNR: 25.40
+2026-04-26 19:52:01,647 [INFO]   New best SSIM: 0.787126
+2026-04-26 19:52:04,089 [INFO] Epoch 10/100 | train=0.01319  val_mae=0.04082  psnr=25.38  ssim=0.8011  (2.4s)
+2026-04-26 19:52:04,441 [INFO]   New best MAE: 0.040823
+2026-04-26 19:52:04,598 [INFO]   New best SSIM: 0.801147
+2026-04-26 19:52:07,043 [INFO] Epoch 11/100 | train=0.01249  val_mae=0.06583  psnr=22.65  ssim=0.7730  (2.4s)
+2026-04-26 19:52:09,639 [INFO] Epoch 12/100 | train=0.01450  val_mae=0.05014  psnr=24.72  ssim=0.7772  (2.4s)
+2026-04-26 19:52:12,260 [INFO] Epoch 13/100 | train=0.01220  val_mae=0.04523  psnr=25.26  ssim=0.7954  (2.5s)
+2026-04-26 19:52:14,868 [INFO] Epoch 14/100 | train=0.01348  val_mae=0.04525  psnr=25.11  ssim=0.8129  (2.5s)
+2026-04-26 19:52:15,209 [INFO]   New best SSIM: 0.812897
+2026-04-26 19:52:17,659 [INFO] Epoch 15/100 | train=0.01148  val_mae=0.03990  psnr=25.84  ssim=0.8234  (2.4s)
+2026-04-26 19:52:17,959 [INFO]   New best MAE: 0.039897
+2026-04-26 19:52:18,111 [INFO]   New best PSNR: 25.84
+2026-04-26 19:52:18,260 [INFO]   New best SSIM: 0.823354
+2026-04-26 19:52:20,707 [INFO] Epoch 16/100 | train=0.01133  val_mae=0.03541  psnr=26.44  ssim=0.8321  (2.4s)
+2026-04-26 19:52:21,029 [INFO]   New best MAE: 0.035410
+2026-04-26 19:52:21,176 [INFO]   New best PSNR: 26.44
+2026-04-26 19:52:21,327 [INFO]   New best SSIM: 0.832133
+2026-04-26 19:52:23,775 [INFO] Epoch 17/100 | train=0.01256  val_mae=0.03819  psnr=26.27  ssim=0.8305  (2.4s)
+2026-04-26 19:52:26,384 [INFO] Epoch 18/100 | train=0.00908  val_mae=0.03514  psnr=26.54  ssim=0.8362  (2.4s)
+2026-04-26 19:52:26,682 [INFO]   New best MAE: 0.035136
+2026-04-26 19:52:26,831 [INFO]   New best PSNR: 26.54
+2026-04-26 19:52:26,982 [INFO]   New best SSIM: 0.836199
+2026-04-26 19:52:29,422 [INFO] Epoch 19/100 | train=0.00915  val_mae=0.03330  psnr=27.00  ssim=0.8462  (2.4s)
+2026-04-26 19:52:29,727 [INFO]   New best MAE: 0.033296
+2026-04-26 19:52:29,877 [INFO]   New best PSNR: 27.00
+2026-04-26 19:52:30,027 [INFO]   New best SSIM: 0.846161
+2026-04-26 19:52:32,460 [INFO] Epoch 20/100 | train=0.00881  val_mae=0.03254  psnr=26.84  ssim=0.8491  (2.4s)
+2026-04-26 19:52:32,782 [INFO]   New best MAE: 0.032535
+2026-04-26 19:52:32,929 [INFO]   New best SSIM: 0.849146
+2026-04-26 19:52:35,364 [INFO] Epoch 21/100 | train=0.00869  val_mae=0.02885  psnr=27.38  ssim=0.8522  (2.4s)
+2026-04-26 19:52:35,712 [INFO]   New best MAE: 0.028846
+2026-04-26 19:52:35,861 [INFO]   New best PSNR: 27.38
+2026-04-26 19:52:36,012 [INFO]   New best SSIM: 0.852175
+2026-04-26 19:52:38,478 [INFO] Epoch 22/100 | train=0.00823  val_mae=0.03325  psnr=27.00  ssim=0.8486  (2.5s)
+2026-04-26 19:52:41,087 [INFO] Epoch 23/100 | train=0.00817  val_mae=0.03185  psnr=27.41  ssim=0.8521  (2.5s)
+2026-04-26 19:52:41,409 [INFO]   New best PSNR: 27.41
+2026-04-26 19:52:43,858 [INFO] Epoch 24/100 | train=0.00816  val_mae=0.03329  psnr=26.96  ssim=0.8547  (2.4s)
+2026-04-26 19:52:44,171 [INFO]   New best SSIM: 0.854664
+2026-04-26 19:52:46,614 [INFO] Epoch 25/100 | train=0.00824  val_mae=0.03027  psnr=27.64  ssim=0.8576  (2.4s)
+2026-04-26 19:52:46,941 [INFO]   New best PSNR: 27.64
+2026-04-26 19:52:47,094 [INFO]   New best SSIM: 0.857560
+2026-04-26 19:52:49,544 [INFO] Epoch 26/100 | train=0.00845  val_mae=0.02818  psnr=27.61  ssim=0.8646  (2.5s)
+2026-04-26 19:52:49,849 [INFO]   New best MAE: 0.028178
+2026-04-26 19:52:50,007 [INFO]   New best SSIM: 0.864576
+2026-04-26 19:52:52,479 [INFO] Epoch 27/100 | train=0.00747  val_mae=0.02644  psnr=28.03  ssim=0.8671  (2.5s)
+2026-04-26 19:52:52,787 [INFO]   New best MAE: 0.026442
+2026-04-26 19:52:52,940 [INFO]   New best PSNR: 28.03
+2026-04-26 19:52:53,091 [INFO]   New best SSIM: 0.867142
+2026-04-26 19:52:55,536 [INFO] Epoch 28/100 | train=0.00692  val_mae=0.02752  psnr=27.79  ssim=0.8687  (2.4s)
+2026-04-26 19:52:55,902 [INFO]   New best SSIM: 0.868682
+2026-04-26 19:52:58,347 [INFO] Epoch 29/100 | train=0.00667  val_mae=0.02787  psnr=27.85  ssim=0.8702  (2.4s)
+2026-04-26 19:52:58,663 [INFO]   New best SSIM: 0.870175
+2026-04-26 19:53:01,112 [INFO] Epoch 30/100 | train=0.00653  val_mae=0.02587  psnr=28.17  ssim=0.8713  (2.4s)
+2026-04-26 19:53:01,475 [INFO]   New best MAE: 0.025875
+2026-04-26 19:53:01,625 [INFO]   New best PSNR: 28.17
+2026-04-26 19:53:01,773 [INFO]   New best SSIM: 0.871297
+2026-04-26 19:53:04,224 [INFO] Epoch 31/100 | train=0.00688  val_mae=0.02571  psnr=28.27  ssim=0.8735  (2.5s)
+2026-04-26 19:53:04,530 [INFO]   New best MAE: 0.025707
+2026-04-26 19:53:04,681 [INFO]   New best PSNR: 28.27
+2026-04-26 19:53:04,831 [INFO]   New best SSIM: 0.873502
+2026-04-26 19:53:07,284 [INFO] Epoch 32/100 | train=0.00737  val_mae=0.02636  psnr=28.23  ssim=0.8739  (2.5s)
+2026-04-26 19:53:07,626 [INFO]   New best SSIM: 0.873852
+2026-04-26 19:53:10,071 [INFO] Epoch 33/100 | train=0.00690  val_mae=0.02638  psnr=28.42  ssim=0.8722  (2.4s)
+2026-04-26 19:53:10,413 [INFO]   New best PSNR: 28.42
+2026-04-26 19:53:12,859 [INFO] Epoch 34/100 | train=0.00709  val_mae=0.02478  psnr=28.47  ssim=0.8779  (2.4s)
+2026-04-26 19:53:13,226 [INFO]   New best MAE: 0.024779
+2026-04-26 19:53:13,414 [INFO]   New best PSNR: 28.47
+2026-04-26 19:53:13,569 [INFO]   New best SSIM: 0.877857
+2026-04-26 19:53:16,023 [INFO] Epoch 35/100 | train=0.00707  val_mae=0.02710  psnr=28.26  ssim=0.8764  (2.5s)
+2026-04-26 19:53:18,648 [INFO] Epoch 36/100 | train=0.00733  val_mae=0.02912  psnr=27.98  ssim=0.8768  (2.4s)
+2026-04-26 19:53:21,278 [INFO] Epoch 37/100 | train=0.00700  val_mae=0.02802  psnr=27.99  ssim=0.8727  (2.5s)
+2026-04-26 19:53:23,907 [INFO] Epoch 38/100 | train=0.00656  val_mae=0.02516  psnr=28.38  ssim=0.8786  (2.5s)
+2026-04-26 19:53:24,224 [INFO]   New best SSIM: 0.878555
+2026-04-26 19:53:26,667 [INFO] Epoch 39/100 | train=0.00666  val_mae=0.02637  psnr=28.39  ssim=0.8797  (2.4s)
+2026-04-26 19:53:26,998 [INFO]   New best SSIM: 0.879662
+2026-04-26 19:53:29,442 [INFO] Epoch 40/100 | train=0.00745  val_mae=0.02490  psnr=28.61  ssim=0.8827  (2.4s)
+2026-04-26 19:53:29,748 [INFO]   New best PSNR: 28.61
+2026-04-26 19:53:29,902 [INFO]   New best SSIM: 0.882709
+2026-04-26 19:53:32,349 [INFO] Epoch 41/100 | train=0.00659  val_mae=0.02384  psnr=28.55  ssim=0.8826  (2.4s)
+2026-04-26 19:53:32,671 [INFO]   New best MAE: 0.023843
+2026-04-26 19:53:35,129 [INFO] Epoch 42/100 | train=0.00650  val_mae=0.02724  psnr=28.21  ssim=0.8804  (2.5s)
+2026-04-26 19:53:37,751 [INFO] Epoch 43/100 | train=0.00608  val_mae=0.02938  psnr=27.68  ssim=0.8763  (2.5s)
+2026-04-26 19:53:40,360 [INFO] Epoch 44/100 | train=0.00640  val_mae=0.02953  psnr=27.76  ssim=0.8581  (2.5s)
+2026-04-26 19:53:42,969 [INFO] Epoch 45/100 | train=0.00633  val_mae=0.02727  psnr=28.02  ssim=0.8733  (2.5s)
+2026-04-26 19:53:45,590 [INFO] Epoch 46/100 | train=0.00644  val_mae=0.02730  psnr=28.08  ssim=0.8727  (2.5s)
+2026-04-26 19:53:48,211 [INFO] Epoch 47/100 | train=0.00634  val_mae=0.02421  psnr=28.58  ssim=0.8802  (2.4s)
+2026-04-26 19:53:50,812 [INFO] Epoch 48/100 | train=0.00570  val_mae=0.02353  psnr=28.70  ssim=0.8810  (2.4s)
+2026-04-26 19:53:51,158 [INFO]   New best MAE: 0.023532
+2026-04-26 19:53:51,309 [INFO]   New best PSNR: 28.70
+2026-04-26 19:53:53,759 [INFO] Epoch 49/100 | train=0.00581  val_mae=0.02502  psnr=28.44  ssim=0.8808  (2.4s)
+2026-04-26 19:53:56,362 [INFO] Epoch 50/100 | train=0.00545  val_mae=0.02337  psnr=28.72  ssim=0.8807  (2.4s)
+2026-04-26 19:53:56,730 [INFO]   New best MAE: 0.023371
+2026-04-26 19:53:56,883 [INFO]   New best PSNR: 28.72
+2026-04-26 19:53:59,346 [INFO] Epoch 51/100 | train=0.00565  val_mae=0.02491  psnr=28.48  ssim=0.8820  (2.5s)
+2026-04-26 19:54:01,957 [INFO] Epoch 52/100 | train=0.00570  val_mae=0.02297  psnr=28.79  ssim=0.8845  (2.5s)
+2026-04-26 19:54:02,284 [INFO]   New best MAE: 0.022968
+2026-04-26 19:54:02,436 [INFO]   New best PSNR: 28.79
+2026-04-26 19:54:02,685 [INFO]   New best SSIM: 0.884486
+2026-04-26 19:54:05,130 [INFO] Epoch 53/100 | train=0.00567  val_mae=0.02317  psnr=28.79  ssim=0.8844  (2.4s)
+2026-04-26 19:54:07,740 [INFO] Epoch 54/100 | train=0.00555  val_mae=0.02214  psnr=28.98  ssim=0.8852  (2.4s)
+2026-04-26 19:54:08,056 [INFO]   New best MAE: 0.022141
+2026-04-26 19:54:08,209 [INFO]   New best PSNR: 28.98
+2026-04-26 19:54:08,363 [INFO]   New best SSIM: 0.885226
+2026-04-26 19:54:10,809 [INFO] Epoch 55/100 | train=0.00544  val_mae=0.02237  psnr=28.95  ssim=0.8853  (2.4s)
+2026-04-26 19:54:11,118 [INFO]   New best SSIM: 0.885257
+2026-04-26 19:54:13,565 [INFO] Epoch 56/100 | train=0.00558  val_mae=0.02240  psnr=28.97  ssim=0.8849  (2.4s)
+2026-04-26 19:54:16,167 [INFO] Epoch 57/100 | train=0.00546  val_mae=0.02230  psnr=28.98  ssim=0.8853  (2.4s)
+2026-04-26 19:54:18,789 [INFO] Epoch 58/100 | train=0.00571  val_mae=0.02398  psnr=28.79  ssim=0.8850  (2.4s)
+2026-04-26 19:54:21,411 [INFO] Epoch 59/100 | train=0.00562  val_mae=0.02281  psnr=28.80  ssim=0.8857  (2.4s)
+2026-04-26 19:54:21,747 [INFO]   New best SSIM: 0.885720
+2026-04-26 19:54:24,195 [INFO] Epoch 60/100 | train=0.00536  val_mae=0.02186  psnr=29.08  ssim=0.8879  (2.4s)
+2026-04-26 19:54:24,522 [INFO]   New best MAE: 0.021862
+2026-04-26 19:54:24,676 [INFO]   New best PSNR: 29.08
+2026-04-26 19:54:24,830 [INFO]   New best SSIM: 0.887922
+2026-04-26 19:54:27,275 [INFO] Epoch 61/100 | train=0.00559  val_mae=0.02242  psnr=29.02  ssim=0.8871  (2.4s)
+2026-04-26 19:54:29,884 [INFO] Epoch 62/100 | train=0.00527  val_mae=0.02187  psnr=29.13  ssim=0.8881  (2.5s)
+2026-04-26 19:54:30,207 [INFO]   New best PSNR: 29.13
+2026-04-26 19:54:30,360 [INFO]   New best SSIM: 0.888097
+2026-04-26 19:54:32,808 [INFO] Epoch 63/100 | train=0.00530  val_mae=0.02215  psnr=29.06  ssim=0.8873  (2.4s)
+2026-04-26 19:54:35,416 [INFO] Epoch 64/100 | train=0.00548  val_mae=0.02434  psnr=28.67  ssim=0.8870  (2.4s)
+2026-04-26 19:54:38,021 [INFO] Epoch 65/100 | train=0.00524  val_mae=0.02269  psnr=29.00  ssim=0.8853  (2.4s)
+2026-04-26 19:54:40,631 [INFO] Epoch 66/100 | train=0.00565  val_mae=0.02584  psnr=28.49  ssim=0.8850  (2.4s)
+2026-04-26 19:54:43,251 [INFO] Epoch 67/100 | train=0.00530  val_mae=0.02303  psnr=28.91  ssim=0.8874  (2.4s)
+2026-04-26 19:54:45,871 [INFO] Epoch 68/100 | train=0.00511  val_mae=0.02112  psnr=29.20  ssim=0.8893  (2.4s)
+2026-04-26 19:54:46,230 [INFO]   New best MAE: 0.021125
+2026-04-26 19:54:46,387 [INFO]   New best PSNR: 29.20
+2026-04-26 19:54:46,544 [INFO]   New best SSIM: 0.889259
+2026-04-26 19:54:48,999 [INFO] Epoch 69/100 | train=0.00524  val_mae=0.02320  psnr=28.92  ssim=0.8867  (2.5s)
+2026-04-26 19:54:51,611 [INFO] Epoch 70/100 | train=0.00513  val_mae=0.02133  psnr=29.18  ssim=0.8895  (2.5s)
+2026-04-26 19:54:51,970 [INFO]   New best SSIM: 0.889539
+2026-04-26 19:54:54,416 [INFO] Epoch 71/100 | train=0.00536  val_mae=0.02158  psnr=29.12  ssim=0.8885  (2.4s)
+2026-04-26 19:54:57,037 [INFO] Epoch 72/100 | train=0.00511  val_mae=0.02198  psnr=29.05  ssim=0.8885  (2.4s)
+2026-04-26 19:54:59,661 [INFO] Epoch 73/100 | train=0.00535  val_mae=0.02194  psnr=29.07  ssim=0.8897  (2.4s)
+2026-04-26 19:55:00,023 [INFO]   New best SSIM: 0.889738
+2026-04-26 19:55:02,468 [INFO] Epoch 74/100 | train=0.00495  val_mae=0.02172  psnr=29.09  ssim=0.8896  (2.4s)
+2026-04-26 19:55:05,102 [INFO] Epoch 75/100 | train=0.00489  val_mae=0.02149  psnr=29.17  ssim=0.8898  (2.5s)
+2026-04-26 19:55:05,449 [INFO]   New best SSIM: 0.889832
+2026-04-26 19:55:07,904 [INFO] Epoch 76/100 | train=0.00489  val_mae=0.02129  psnr=29.24  ssim=0.8890  (2.5s)
+2026-04-26 19:55:08,260 [INFO]   New best PSNR: 29.24
+2026-04-26 19:55:10,719 [INFO] Epoch 77/100 | train=0.00517  val_mae=0.02107  psnr=29.27  ssim=0.8902  (2.5s)
+2026-04-26 19:55:11,080 [INFO]   New best MAE: 0.021068
+2026-04-26 19:55:11,236 [INFO]   New best PSNR: 29.27
+2026-04-26 19:55:11,387 [INFO]   New best SSIM: 0.890228
+2026-04-26 19:55:13,835 [INFO] Epoch 78/100 | train=0.00510  val_mae=0.02113  psnr=29.25  ssim=0.8892  (2.4s)
+2026-04-26 19:55:16,446 [INFO] Epoch 79/100 | train=0.00481  val_mae=0.02181  psnr=29.12  ssim=0.8893  (2.4s)
+2026-04-26 19:55:19,073 [INFO] Epoch 80/100 | train=0.00485  val_mae=0.02093  psnr=29.28  ssim=0.8908  (2.4s)
+2026-04-26 19:55:19,430 [INFO]   New best MAE: 0.020925
+2026-04-26 19:55:19,582 [INFO]   New best PSNR: 29.28
+2026-04-26 19:55:19,733 [INFO]   New best SSIM: 0.890831
+2026-04-26 19:55:22,186 [INFO] Epoch 81/100 | train=0.00500  val_mae=0.02125  psnr=29.22  ssim=0.8891  (2.5s)
+2026-04-26 19:55:24,815 [INFO] Epoch 82/100 | train=0.00494  val_mae=0.02108  psnr=29.25  ssim=0.8910  (2.5s)
+2026-04-26 19:55:25,168 [INFO]   New best SSIM: 0.891015
+2026-04-26 19:55:27,624 [INFO] Epoch 83/100 | train=0.00524  val_mae=0.02481  psnr=28.69  ssim=0.8861  (2.5s)
+2026-04-26 19:55:30,251 [INFO] Epoch 84/100 | train=0.00506  val_mae=0.02101  psnr=29.26  ssim=0.8902  (2.4s)
+2026-04-26 19:55:32,874 [INFO] Epoch 85/100 | train=0.00519  val_mae=0.02089  psnr=29.28  ssim=0.8903  (2.4s)
+2026-04-26 19:55:33,237 [INFO]   New best MAE: 0.020893
+2026-04-26 19:55:35,688 [INFO] Epoch 86/100 | train=0.00480  val_mae=0.02117  psnr=29.27  ssim=0.8898  (2.5s)
+2026-04-26 19:55:38,317 [INFO] Epoch 87/100 | train=0.00491  val_mae=0.02118  psnr=29.25  ssim=0.8889  (2.4s)
+2026-04-26 19:55:40,938 [INFO] Epoch 88/100 | train=0.00489  val_mae=0.02096  psnr=29.28  ssim=0.8904  (2.4s)
+2026-04-26 19:55:41,270 [INFO]   New best PSNR: 29.28
+2026-04-26 19:55:43,727 [INFO] Epoch 89/100 | train=0.00495  val_mae=0.02124  psnr=29.24  ssim=0.8914  (2.5s)
+2026-04-26 19:55:44,039 [INFO]   New best SSIM: 0.891364
+2026-04-26 19:55:46,492 [INFO] Epoch 90/100 | train=0.00503  val_mae=0.02115  psnr=29.26  ssim=0.8906  (2.5s)
+2026-04-26 19:55:49,096 [INFO] Epoch 91/100 | train=0.00487  val_mae=0.02099  psnr=29.27  ssim=0.8913  (2.4s)
+2026-04-26 19:55:51,705 [INFO] Epoch 92/100 | train=0.00478  val_mae=0.02137  psnr=29.20  ssim=0.8892  (2.5s)
+2026-04-26 19:55:54,314 [INFO] Epoch 93/100 | train=0.00486  val_mae=0.02133  psnr=29.21  ssim=0.8901  (2.4s)
+2026-04-26 19:55:56,939 [INFO] Epoch 94/100 | train=0.00502  val_mae=0.02217  psnr=29.08  ssim=0.8886  (2.4s)
+2026-04-26 19:55:59,541 [INFO] Epoch 95/100 | train=0.00501  val_mae=0.02115  psnr=29.29  ssim=0.8894  (2.4s)
+2026-04-26 19:55:59,850 [INFO]   New best PSNR: 29.29
+2026-04-26 19:56:02,296 [INFO] Epoch 96/100 | train=0.00507  val_mae=0.02099  psnr=29.26  ssim=0.8906  (2.4s)
+2026-04-26 19:56:04,899 [INFO] Epoch 97/100 | train=0.00508  val_mae=0.02158  psnr=29.19  ssim=0.8905  (2.4s)
+2026-04-26 19:56:07,500 [INFO] Epoch 98/100 | train=0.00490  val_mae=0.02176  psnr=29.15  ssim=0.8898  (2.4s)
+2026-04-26 19:56:10,115 [INFO] Epoch 99/100 | train=0.00480  val_mae=0.02098  psnr=29.27  ssim=0.8910  (2.5s)
+2026-04-26 19:56:12,740 [INFO] Epoch 100/100 | train=0.00499  val_mae=0.02089  psnr=29.28  ssim=0.8916  (2.5s)
+2026-04-26 19:56:13,093 [INFO]   New best SSIM: 0.891586
+2026-04-26 19:56:13,093 [INFO] ==================================================
+2026-04-26 19:56:13,093 [INFO] Training complete.
+2026-04-26 19:56:13,094 [INFO]   Best MAE  : 0.020893 (epoch 85)
+2026-04-26 19:56:13,094 [INFO]   Best PSNR : 29.29    (epoch 95)
+2026-04-26 19:56:13,094 [INFO]   Best SSIM : 0.891586 (epoch 100)
+wandb: updating run metadata
+wandb: uploading history steps 97-99, summary, console lines 203-211
+wandb: 
+wandb: Run history:
+wandb:      epoch ▁▁▁▁▁▁▂▂▂▂▃▃▃▃▃▄▄▄▄▄▄▅▅▅▅▅▆▆▆▆▆▆▆▇▇▇▇▇▇█
+wandb:         lr ███████████████▃▃▃▃▃▃▃▃▃▃▂▂▂▂▁▁▁▁▁▁▁▁▁▁▁
+wandb: train_loss █▂▂▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb:    val_mae █▇▄▆▄▃▃▃▃▂▃▂▂▂▁▂▁▂▂▂▁▁▁▁▁▂▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb:   val_psnr ▁▅▄▅▆▆▆▆▇▇▇▇██▇█▇▇██████████████████████
+wandb:   val_ssim ▁▄▄▅▆▇▆▇▇▇▇█████████████████████████████
+wandb: 
+wandb: Run summary:
+wandb:      epoch 100
+wandb:         lr 0.0
+wandb: train_loss 0.00499
+wandb:    val_mae 0.02089
+wandb:   val_psnr 29.28144
+wandb:   val_ssim 0.89159
+wandb: 
+wandb: 🚀 View run resnet18_l1_noaug_20260426_195132 at: https://wandb.ai/kmin940/PAI-CodingTest/runs/pd6p96b5
+wandb: ⭐️ View project at: https://wandb.ai/kmin940/PAI-CodingTest
+wandb: Synced 5 W&B file(s), 100 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20260426_195133-pd6p96b5/logs

@@ -1,0 +1,18 @@
+2026-04-28 21:24:37,034 [INFO] Checkpoint: checkpoints/swinv2_tiny_window8_256_l1_noaug_20260428_210235/checkpoint_best_ssim.pth
+2026-04-28 21:24:37,034 [INFO] Split: val
+2026-04-28 21:24:37,034 [INFO] Device: cuda
+2026-04-28 21:24:37,036 [INFO] Cases: 200
+2026-04-28 21:24:38,513 [INFO]   processed 50 / 200
+2026-04-28 21:24:39,124 [INFO]   processed 100 / 200
+2026-04-28 21:24:39,736 [INFO]   processed 150 / 200
+2026-04-28 21:24:40,347 [INFO]   processed 200 / 200
+2026-04-28 21:24:40,348 [INFO] Wrote eval_results/swin/swinv2_tiny_window8_256_l1_noaug_20260428_210235/val/val_metrics.csv
+2026-04-28 21:24:43,115 [INFO] Checkpoint: checkpoints/swinv2_tiny_window8_256_l1_noaug_20260428_210235/checkpoint_best_ssim.pth
+2026-04-28 21:24:43,115 [INFO] Split: test
+2026-04-28 21:24:43,115 [INFO] Device: cuda
+2026-04-28 21:24:43,118 [INFO] Cases: 200
+2026-04-28 21:24:44,228 [INFO]   processed 50 / 200
+2026-04-28 21:24:44,837 [INFO]   processed 100 / 200
+2026-04-28 21:24:45,447 [INFO]   processed 150 / 200
+2026-04-28 21:24:46,056 [INFO]   processed 200 / 200
+2026-04-28 21:24:46,057 [INFO] Wrote eval_results/swin/swinv2_tiny_window8_256_l1_noaug_20260428_210235/test/test_metrics.csv

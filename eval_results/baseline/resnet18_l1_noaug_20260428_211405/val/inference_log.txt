@@ -1,0 +1,18 @@
+2026-04-28 21:23:17,899 [INFO] Checkpoint: checkpoints/resnet18_l1_noaug_20260428_211405/checkpoint_best_ssim.pth
+2026-04-28 21:23:17,899 [INFO] Split: val
+2026-04-28 21:23:17,900 [INFO] Device: cuda
+2026-04-28 21:23:17,902 [INFO] Cases: 200
+2026-04-28 21:23:18,601 [INFO]   processed 50 / 200
+2026-04-28 21:23:18,843 [INFO]   processed 100 / 200
+2026-04-28 21:23:19,085 [INFO]   processed 150 / 200
+2026-04-28 21:23:19,328 [INFO]   processed 200 / 200
+2026-04-28 21:23:19,329 [INFO] Wrote eval_results/baseline/resnet18_l1_noaug_20260428_211405/val/val_metrics.csv
+2026-04-28 21:23:22,032 [INFO] Checkpoint: checkpoints/resnet18_l1_noaug_20260428_211405/checkpoint_best_ssim.pth
+2026-04-28 21:23:22,032 [INFO] Split: test
+2026-04-28 21:23:22,032 [INFO] Device: cuda
+2026-04-28 21:23:22,034 [INFO] Cases: 200
+2026-04-28 21:23:22,483 [INFO]   processed 50 / 200
+2026-04-28 21:23:22,724 [INFO]   processed 100 / 200
+2026-04-28 21:23:22,964 [INFO]   processed 150 / 200
+2026-04-28 21:23:23,206 [INFO]   processed 200 / 200
+2026-04-28 21:23:23,208 [INFO] Wrote eval_results/baseline/resnet18_l1_noaug_20260428_211405/test/test_metrics.csv
