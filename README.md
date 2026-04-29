@@ -49,8 +49,3 @@ python scripts/evaluate.py \
   --checkpoint checkpoints/<run_name>/checkpoint_best_ssim.pth \
   --output-dir ./eval_results
 ```
-
-## Evaluation Outputs
-```bash
-eval_results/<run_name>/
-```
