@@ -54,17 +54,3 @@ python scripts/evaluate.py \
 ```bash
 eval_results/<run_name>/
 ```
-
-## Train models
-```bash
-python scripts/train.py --config configs/baseline.yaml
-python scripts/train.py --config configs/swin.yaml
-```
-
-## Evaluate models
-```bash
-python scripts/evaluate.py \
-  --checkpoint checkpoints/<run_name>/checkpoint_best_ssim.pth \
-  --output-dir ./eval_results
-``` 
-
